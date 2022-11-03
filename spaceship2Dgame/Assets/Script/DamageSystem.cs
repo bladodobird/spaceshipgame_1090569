@@ -1,21 +1,21 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace YIZU
 {
 
     public class DamageSystem : MonoBehaviour
     {
-        [SerializeField, Header("·|³y¦¨¶Ë®`ªº¥Ø¼Ğ")]
+        [SerializeField, Header("æœƒé€ æˆå‚·å®³çš„ç›®æ¨™")]
         private string nameTarget;
-        [SerializeField, Header("Ãz¬µ¹w¸mª«")]
+        [SerializeField, Header("çˆ†ç‚¸é ç½®ç‰©")]
         private GameObject prefabExplosion;
 
-        // ¸I¼²¶}©l¨Æ¥ó ¤@¦¸
+        // ç¢°æ’é–‹å§‹äº‹ä»¶ ä¸€æ¬¡
         private void OnCollisionEnter2D(collision2D collision)
         {
-            //print("¸I¼² : " + collision.gameObject);
+            //print("ç¢°æ’ : " + collision.gameObject);
 
-            // ¦pªG ¸I¨ìª«¥ó¦WºÙ ¥]§t ¼Ä¾÷ ´NÃz¬µ
+            // å¦‚æœ ç¢°åˆ°ç‰©ä»¶åç¨± åŒ…å« æ•µæ©Ÿ å°±çˆ†ç‚¸
             if (collision.gameObject.name.Contain(nameTarget))
             {
                 Instantiate(prefabExplosion, transform.position, transform.rotation);
@@ -26,13 +26,13 @@ namespace YIZU
             }
         }
 
-        // ¸I¼²Â÷¶}¨Æ¥ó ¤@¦¸
+        // ç¢°æ’é›¢é–‹äº‹ä»¶ ä¸€æ¬¡
         private void OnCollisionExit2D(collision2D collision)
         {
 
         }
         
-        // ¸I¼²«ùÄò¨Æ¥ó
+        // ç¢°æ’æŒçºŒäº‹ä»¶
         private void OnCollisionStay2D(collision2D collision)
         {
 
