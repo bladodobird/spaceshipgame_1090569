@@ -14,8 +14,10 @@ namespace YIZU
         [SerializeField, Header("子彈生成點")]
         private Transform pointSpawn;
 
+        // 自訂方法
         // 生成子彈
-        private void SpawnBullet()
+        // protected 保護級別允許子類別存取
+        protected void SpawnBullet()
         {
             // 實例物件座標角度
             // 生成 子彈預置物
