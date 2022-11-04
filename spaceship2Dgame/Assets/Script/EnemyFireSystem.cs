@@ -14,7 +14,7 @@ namespace YIZU
         {
 
             // 呼叫自訂方法
-            //SpawnBullet();
+            // SpawnBullet();
 
             // 延遲重複呼叫(方法名稱，延遲間隔)
             InvokeRepeating("SpawnBullet", 0, interval);

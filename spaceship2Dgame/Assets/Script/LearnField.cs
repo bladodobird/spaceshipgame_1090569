@@ -14,7 +14,7 @@ namespace YIZU
         // 私人 : Private，僅在此類別內能存取
         private int lv;
 
-        // 等於 指定符號
+        // 整數
         public int enemy = 5;
 
         // 浮點數
