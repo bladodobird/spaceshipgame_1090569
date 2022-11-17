@@ -12,6 +12,11 @@ namespace YIZU
         private string nameTarget;
         [SerializeField, Header("爆炸預設物")]
         private GameObject prefabExplosion;
+        [Header("受傷與爆炸音效")]
+        [SerializeField]
+        private AudioClip soundHit;
+        [SerializeField]
+        private AudioClip soundExplosion;
 
         // 碰撞離開事件 一次
         private void OnCollisionEnter2D(Collision2D collision)
@@ -22,6 +27,9 @@ namespace YIZU
             if (collision.gameObject.name.Contains(nameTarget))
             {
                 Instantiate(prefabExplosion, transform.position, transform.rotation);
+
+                SoundManager.instance.PlaySound(soundHit, new Vector2(0.7f, 0.9f));
+                SoundManager.instance.PlaySound(soundExplosion, new Vector2(1.2f, 1.5f));
 
                 // 刪除此物件
                 Destroy(gameObject);

@@ -97,7 +97,7 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 0.07079922, g: 0.4056604, b: 0.3745619, a: 1}
+    - _FaceColor: {r: 0.113964036, g: 0.122641504, b: 0.12192689, a: 1}
     - _GlowColor: {r: 0.40226683, g: 0.5377358, b: 0.2967693, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0.7653525, g: 0.84147495, b: 0.8584906, a: 1}

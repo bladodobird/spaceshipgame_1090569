@@ -12,12 +12,19 @@ namespace YIZU
 
         private void Awake()
         {
-
             // 呼叫自訂方法
-            // SpawnBullet();
+            // SpawnBullet();           
+        }
 
+        private void OnBecameVisible()
+        {
             // 延遲重複呼叫(方法名稱，延遲間隔)
             InvokeRepeating("SpawnBullet", 0, interval);
+        }
+
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
         }
     }
 
