@@ -1,29 +1,29 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace YIZU
 {
     /// <summary>
-    /// §R°£ª«¥ó
+    /// åˆªé™¤ç‰©ä»¶
     /// </summary>
     public class DestroyObject : MonoBehaviour
     {
-        [SerializeField, Header("§R°£®É¶¡"), Range(0, 3)]
+        [SerializeField, Header("åˆªé™¤æ™‚é–“"), Range(0, 3)]
         private float destroyTime = 0.5f;
 
         private void Awake()
         {
-            // gmaeObject ¸}¥»ªº¹CÀ¸ª«¥ó
-            // §R°£ª«¥ó ®É¶¡
+            // gmaeObject è…³æœ¬çš„éŠæˆ²ç‰©ä»¶
+            // åˆªé™¤ç‰©ä»¶ æ™‚é–“
             Destroy(gameObject, destroyTime);
         }
 
-        // ¥i¨£¨Æ¥ó : ·í Renderer ¥X²{¦b Scene ©Î Game ®É°õ¦æ¤@¦¸
+        // å¯è¦‹äº‹ä»¶ : ç•¶ Renderer å‡ºç¾åœ¨ Scene æˆ– Game æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnBecameVisible()
         {
             
         }
 
-        // ¤£¥i¨£¨Æ¥ó ¦P¤W¦ı®ø¥¢®É°õ¦æ¤@¦¸
+        // ä¸å¯è¦‹äº‹ä»¶ åŒä¸Šä½†æ¶ˆå¤±æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnBecameInvisible()
         {
             Destroy(gameObject);

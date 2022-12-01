@@ -1,24 +1,24 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace YIZU
 {
     /// <summary>
-    /// ª±®a¥¢±Ñ©Î¹LÃö
+    /// ç©å®¶å¤±æ•—æˆ–éé—œ
     /// </summary>
     public class PlayerFinal : MonoBehaviour
     {
-        // ³Q§R°£®É°õ¦æ¤@¦¸
+        // è¢«åˆªé™¤æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnDestroy()
         {
-            // ¥¢±Ñ
-            FinalManager.instance.GameOver("§AÃz¤F");
+            // å¤±æ•—
+            FinalManager.instance.GameOver("ä½ çˆ†äº†");
         }
 
-        // ¸I¨ì¤Ä¿ï Is Trigger ª«¥ó®É·|°õ¦æ¤@¦¸
+        // ç¢°åˆ°å‹¾é¸ Is Trigger ç‰©ä»¶æ™‚æœƒåŸ·è¡Œä¸€æ¬¡
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            // ¹LÃö
-            FinalManager.instance.GameOver("§AÄ¹¤F");
+            // éé—œ
+            FinalManager.instance.GameOver("ä½ è´äº†");
         }
     }
 }
