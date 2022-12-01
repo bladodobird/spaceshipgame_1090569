@@ -41,7 +41,7 @@ namespace YIZU
         public bool isOpen;
 
         // 序列化欄位
-        [SerializeField]
-        private int countBoomb = 7;
+        //[SerializeField]
+        //private int countBoomb = 7;
     }
 }
