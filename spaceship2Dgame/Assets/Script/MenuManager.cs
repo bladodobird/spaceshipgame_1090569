@@ -26,7 +26,7 @@ namespace YIZU
         /// </summery>
         private void StartGame()
         {
-            SceneManager.LoadScene("遊戲內場景");
+            SceneManager.LoadScene(1);
         }
     }
 }
