@@ -17,7 +17,7 @@ namespace YIZU
 
         private void Awake()
         {
-            btnPlay = GameObject.Find("開始遊戲").GetComponent<Button>();
+            btnPlay = GameObject.Find("Button").GetComponent<Button>();
             btnPlay.onClick.AddListener(StartGame);
         }
 

@@ -62,7 +62,7 @@ namespace YIZU
 
         private void Replay()
         {
-            SceneManager.LoadScene("開始選單");
+            SceneManager.LoadScene(0);
         }
     }
 }
